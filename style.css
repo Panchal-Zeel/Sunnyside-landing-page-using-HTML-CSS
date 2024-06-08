@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background: url(./assets/image-header.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+nav ul {
+  display: flex;
+  /* width: 80%; */
+  justify-content: end;
+  gap: 50px;
+  align-items: center;
+  padding-right: 40px;
+}
+
+nav ul img {
+  display: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+header h1 {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2.2px;
+  text-align: center !important;
+  position: absolute;
+  top: 20%;
+}
+
+/* header .arrow  {
+    width: 100%;
+    margin: 0 auto;
+} */
+
+header .arrow img {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+section {
+  width: 100%;
+  height: auto;
+  /* font-family: serif; */
+}
+
+section .first,
+section .second,
+section .third {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.content {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 26px;
+}
+
+.content h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 45px;
+}
+
+.content p {
+  color: hsl(204, 2%, 55%);
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.content button {
+  border: none;
+  outline: none;
+  background: none;
+  width: fit-content;
+  white-space: no-wrap;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.first button {
+  border-bottom: 7px solid hsl(51, 100%, 49%);
+}
+
+section img {
+  width: 100%;
+}
+
+.second button {
+  border-bottom: 7px solid hsl(7, 99%, 70%);
+}
+
+.third .img-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  width: 45%;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  color: hsl(167, 40%, 24%);
+}
+
+.img-cont h3 {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-weight: 750;
+}
+
+.img-cont p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.third > div {
+  position: relative;
+}
+
+.third .img-cont {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.client-sec {
+  padding: 100px 0;
+  display: grid;
+  gap: 40px;
+}
+
+.client-sec h2 {
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  color: hsl(232, 10%, 55%);
+  font-family: "Times New Roman", Times, serif;
+  /* padding: 20px; */
+}
+
+.clients {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  /* gap: 20px; */
+  flex-wrap: wrap;
+}
+
+.client {
+  width: 26%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+  padding: 20px;
+  box-shadow: 3px 3px 6px 10px hsla(232, 10%, 55%, 20%);
+  border-radius: 21px;
+}
+
+.client-img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.client > p {
+  color: hsl(213, 9%, 39%);
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.client-name {
+  padding: 12px 0;
+}
+
+.client-name h3 {
+  text-transform: capitalize;
+  font-size: 1.3em;
+}
+
+.client-name p {
+  color: hsl(210, 4%, 67%);
+  text-transform: capitalize;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+footer {
+  width: 100%;
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  background-color: hsl(210, 4%, 67%);
+}
+
+footer img {
+  color: #458c7e;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+footer ul li {
+  text-transform: capitalize;
+  color: hsl(210, 17%, 35%);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+footer .social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+
